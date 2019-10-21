@@ -101,7 +101,7 @@ export default class Login extends Component {
             type: ActionType.server_called
         }
         window.CS.clientAction(uiAction);
-        axios.get(window.CS.getDBServerURL() + '/logout').then(res => {
+        axios.get('/logout').then(res => {
             const loggedoutAction: IAction = {
                 type: ActionType.user_logged_out
             }

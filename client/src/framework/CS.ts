@@ -45,8 +45,4 @@ export class CS {
    public clientAction(action:IAction | Function){
     this.store.dispatch(action);
     }
-    public getDBServerURL(){
-        //return "https://patricks-boilerplate.herokuapp.com/";
-        return "http://localhost:8080";
-    }
 }
